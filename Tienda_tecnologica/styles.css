@@ -59,7 +59,10 @@ body {
   color: transparent;
   animation: animated 5s linear infinite;
 }
-
+.header img{
+  width: 165px;
+  height: -90px;
+}
 
 @keyframes animated {
   to {
