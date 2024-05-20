@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="PQR.css">
+    <title>PQR</title>
+</head>
+<body>
+    <header class="header">
+        <h2>Tienda tecnologica</h2>
+        <nav class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li class="item">Productos
+                <ul class="sub-item">
+                    <li><a href="consolasAccesorios.html">Consolas y Accesorios</a></li>
+                    <li><a href="celulares.html">Celulares</a></li>
+                    <li><a href="computadores.html">Computadores</a></li>
+                    <li><a href="video_juegos.html">Video Juegos</a></li>
+                    <li><a href="laptos.html">Laptops</a></li>
+                    <li><a href="impresoras.html">Impresoras y Proyectores</a></li>
+                </ul>
+            </li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="PQR.html">PQR</a></li>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Formulario PQR</h1>
+        <h3>Tipo de Solicitud</h3>
+        <form id="pqrForm"onsubmit="return validateForm(event)">
+            <br>
+            <h4>Seleccionar</h4>
+            <select id="type" name="type">
+                <option value="0" selected>Peticion...</option>
+                <option value="queja">Queja</option>
+                <option value="reclamo">Reclamo</option>
+            </select>
+            <h3>Datos Generales</h3>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+            <label for="tipoDocumento"><h4>Documento de identidad*</h4></label>
+            <select id="tipoDocumento" name="tipoDocumento">
+                <option value="0" selected>Tipo...</option>
+                    <option value="documentoId">TI</option>
+                    <option value="cedula">CC</option>
+                    <option value="cedula_extrangera">CE</option>
+                    <option value="passaporte">PAS</option>
+            </select> 
+            <input type="text" id="numeroDocumento" name="numeroDocumento" placeholder="Número de documento" required>
+            <input type="text" id="correo" name="correo" placeholder="Correo electrónico" required>
+            <input type="text" id="telefono" name="telefono" placeholder="Teléfono" required>
+
+            <br>
+            <div class="col-4">
+                <label for="ciudad" class="form-label">Ciudad: </label>
+                <select id="ciudad" class="form-select" aria-label="Default select example" onchange="seleccionarCiudad()">
+                    <option value="0" selected>Seleccionar ciudad...</option>
+                </select>
+            </div>
+            <br>
+            <div class="col-4">
+                <label for="departamento" class="form-label">Departamento: </label>
+                <select id="departamento" class="form-select" aria-label="Default select example">
+                    <option value="0" selected>Seleccionar departamento...</option>
+                </select>
+            </div>
+
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" placeholder="Dirección" required>
+            <label for="profesion">Profesión u oficio:</label>
+            <input type="text" id="profesion" name="profesion" placeholder="Profesión u oficio" required>
+            <h3>Descripción de la Solicitud</h3>
+            <textarea id="descripcion" name="descripcion" required placeholder="Describe tu solicitud aquí"></textarea>
+            <div class="row mt-2">
+                <br>
+                <div>
+                    <input class="form-check-input" type="checkbox" value="" id="autorizacion">
+                    <label class="form-check-label" for="autorizacion">
+                    ¿Autoriza el tratamiento de datos personales?
+                    </label>
+                </div>
+            </div>
+            
+            <button type="submit" onclick="validateForm()">Enviar</button>
+        </form>
+        
+    </div>
+    <footer class="footer">
+        <div class="redes_sociales">
+            <a href="#" class="social-icon"><img src="img/facebook.png" alt="Facebook"></a>
+            <a href="#" class="social-icon"><img src="img/twitter.png" alt="Twitter"></a>
+            <a href="#" class="social-icon"><img src="img/instagram.png" alt="Instagram"></a>
+            <a href="#" class="social-icon"><img src="img/whatsapp.png" alt="Whatsapp"></a>
+        </div>
+        <div class="footer-section legal">
+            <a href="#">Política y Privacidad</a>
+        </div>
+        <div class="footer-section rights">
+            <p>Todos los Derechos Reservados</p>
+        </div>
+        <div class="footer-copy">
+            <p>© Copyright 2024</p>
+        </div>
+    </footer>
+    <script src="CyD.js"></script>
+    <script src="PQR.js"></script>
+</body>
+</html>
