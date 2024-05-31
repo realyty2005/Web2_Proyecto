@@ -1,0 +1,67 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  padding-top: 70px; /* Space for fixed navbar */
+  margin: 0;
+}
+
+header {
+  position: relative;
+}
+
+.header-content {
+  background: url('https://via.placeholder.com/1920x600') no-repeat center center/cover;
+  height: 400px;
+  color: rgb(211, 47, 47);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 3em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+section {
+  padding: 4em 2em;
+  background-color: white;
+  margin-bottom: 2em;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+  color: #333;
+}
+
+footer {
+  padding: 3em 0;
+  color: white;
+}
+
+footer .container {
+  max-width: 1100px;
+}
+
+footer a {
+  color: #ffdd57;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer .border-bottom {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+footer .text-uppercase {
+  text-transform: uppercase;
+}
+
+footer .fw-bold {
+  font-weight: bold;
+}
